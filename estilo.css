@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    font-size: 16px ;
+    line-height: 24px ;
+    color: #333;
+}
+
+
+
+
+.logo{
+    background-color: #D6D6D6;
+    width: 1200px;
+    /* height: 200px; */
+    margin: auto;
+    text-align: center;
+    /* border: 1px blue solid; */
+    padding: 10px 550px ;
+}
+
+.contlogo{
+    width: 100px;
+    /* border: 1px red solid; */
+    /* margin-left: 550px; */
+
+}
+
+.foto1{
+    width: 100%;
+}
+
+.cont2{
+    margin: auto;
+    width: 1100px;
+    padding-top: 10px;
+}
+
+.cont2 h2{
+    width: 1100px;
+    border-bottom: 1px #D6D6D6 solid;
+    padding-bottom: 10px;
+}
+
+.lineavino{
+    background-color: #631233;
+    width: 50px;
+    height: 10px;
+}
+
+.letravino{
+    color: #631233;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.campos1{
+    border: 1px #D6D6D6 solid;
+    padding: 10px 0px;
+    border-radius: 8px;
+    margin-top: 12px;
+    width: 300px;
+    color: #888585;
+
+
+
+}
+
+.contform{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.formulario p{
+    margin-top: 12px;
+}
+
+#botoncurp{
+    padding: 10px 25px;
+    background-color:#631233;
+    color: white;
+    border: 0;
+    text-decoration: none;
+
+}
+
+
+.contform2 {
+margin-left: 15px;
+}
+
+textarea{
+    width: 1080px;
+    height: 300px;
+}
+
+#enviar{
+    padding: 15px 40px;
+    background-color: #0F2620;
+    color: white;
+    border: 0;
+}
+
+.contdatos{
+    width: 1200px;
+    margin: auto;
+    background-color: #631233;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+

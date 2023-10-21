@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript">
+        function valida_envia() {
+            if (document.contenedorform.nombre.value.length==0) {
+                alert("Tienes que escribir tu nombre")
+                document.contenedorform.nombre.focus()
+                return 0;
+            }
+            if (document.contenedorform.p_apellido.value.length==0) {
+                alert("Tienes que escribir tu Primer apellido")
+                document.contenedorform.p_apellido.focus()
+                return 0;
+            }
+            if (document.contenedorform.correo.value.length==0) {
+                alert("Tienes que escribir tu Correo Electronico")
+                document.contenedorform.correo.focus()
+                return 0;
+            }
+            if (document.contenedorform.asunto.value.length==0) {
+                alert("Tienes que escribir el Asunto")
+                document.contenedorform.asunto.focus()
+                return 0;
+            }
+            document.contenedorform.submit();
+        }
+    </script>
+</head>
+<body>
+    <div class="logo">
+        <div class="contlogo">
+            <img class="foto1" src="imagenes/logo.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="cont2">
+        <h2>Datos generales del alumno</h2>
+        <div class="lineavino">
+
+        </div>
+
+
+        <div class="formulario">
+            <br>
+            <p class="letravino">*Campos obligatorios</p>
+
+            <form action="enviar.php" name="contenedorform" method="get">
+                <div class="contform">
+                    <p>CURP</p>
+                    <input type="text" placeholder="CURP" name="curp"   class="campos1" maxlength="18">
+                    <!-- <input type="button" value="Consultar CURP" id="botoncurp"> -->
+                    <a href="https://www.gob.mx/curp/"          target="_blank" id="botoncurp">Consultar CURP</a>
+                </div>
+                <br>
+
+                <div class="contform">
+                    <p>Nombre*:</p>
+                    <input type="text" placeholder="Nombres" name="nombre" class="campos1">
+                    <p>correo electronico*:</p>
+                    <input type="text" placeholder="Correo" name="correo" class="campos1">
+                    <p>Telefono fijo:</p>
+                    <input type="tel" placeholder="Telefono fijo" name="telefono" maxlength="10" class="campos1">
+                </div>
+
+
+                <div class="contform">
+                    <p>Primer apellido*:</p>
+                    <input type="text" placeholder="Primer apellido" name="p_apellido" class="campos1">
+                    <p>Sexo:</p>
+                    <select name="sexo" id="" class="campos1">
+                        <option value="">Selecciona una opción</option>
+                        <option value="">Hombre</option>
+                        <option value="">Mujer</option>
+                    </select>
+                    <p>Celular:</p>
+                    <input type="tel" placeholder="Celular" name="celular" maxlength="10" pattern="[0-9]{10}" class="campos1">
+                </div>
+
+
+                <div class="contform">
+                    <p>Segundo apellido</p>
+                    <input type="text" placeholder="Segundo apellido" name="s_apellido" class="campos1">
+                    <p>Fecha de nacimiento</p>
+                    <input type="date" name="fecha" class="campos1">
+
+                </div>
+                <br>
+
+                <div class="contform2">
+                    <p>Asunto*</p>
+                    <textarea name="asunto" id=""></textarea>
+                    <br><br>
+                    <input type="button" value="Enviar" id="enviar" onclick="valida_envia()">
+                </div>
+
+                
+            </form>
+        </div>
+
+
+    </div>
+
+    <br><br>
+
+    <div class="contdatos">
+        <h2>Darwin Uriel Mendez Vela<br>7SB<br>Programación web</h2>
+
+    </div>
+
+
+</body>
+</html>
